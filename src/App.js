@@ -3,19 +3,17 @@ import { Navbar, Container, Card, Row,Col , Nav } from "react-bootstrap";
 const App = () => {
   return (
     <>
-      <Navbar bg="info">
-      <Row>
-          <Col>
-            <Navbar.Brand href="#home" className="d-flex justify-content-start">MY APP</Navbar.Brand>
-          </Col>
-          <Col className=" d-flex justify-content-end">
-            <Nav style={{ fontSize: "22px" }}>
-              <Nav.Link href="#home">Home</Nav.Link>
-              <Nav.Link href="#about">About</Nav.Link>
-              <Nav.Link href="#contact">Contact</Nav.Link>
+      <Navbar bg="primary" className="justify-content-between">
+      
+            <Navbar.Brand href="#home" className="text-light" >MY APP</Navbar.Brand>
+         
+            <Nav >
+              <Nav.Link href="#home" className="text-light">Home</Nav.Link>
+              <Nav.Link href="#about" className="text-light">About</Nav.Link>
+              <Nav.Link href="#contact" className="text-light">Contact</Nav.Link>
             </Nav>
-          </Col>
-        </Row>
+       
+   
       </Navbar>
       <Container className="mt-3 mb-4 flex ">
         <h1 className="text-center ">
